@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M.Sc. in Global Health & Human Development</title>
-  <link rel="shortcut icon" type="image/x-icon" href="https://jguonline.edu.in/public/frontend/assets/img/favicon.ico">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles.css" />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j
-,f);
-})(window,document,'script','dataLayer','GTM-N94ZC5LW');</script>
-<!-- End Google Tag Manager → -->
-
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N94ZC5LW');</script>
+    <!-- End Google Tag Manager -->
  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0K2JZFDWZ"></script>
 <script>
@@ -30,278 +18,906 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  gtag('js', new Date());
  gtag('config', 'G-K0K2JZFDWZ');
 </script>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1243343920376799');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1243343920376799&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>M.Sc. in Global Health &amp; Human Development</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://jguonline.edu.in/public/frontend/assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Critical: hero layout; enquiry form scrolls inside card only -->
+    <style>
+      .hero-section {
+        overflow-x: clip !important;
+        overflow-y: visible !important;
+        background: #ffffff !important;
+        position: relative;
+        z-index: 10;
+        isolation: isolate;
+      }
 
+      .hero-info-bar {
+        background: linear-gradient(90deg, #1a237e 0%, #4527a0 32%, #7b1fa2 62%, #00acc1 100%) !important;
+        position: relative !important;
+        z-index: 2 !important;
+        flex: none !important;
+        flex-shrink: 0 !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .hero-bottom-bars {
+        position: relative !important;
+        z-index: 2 !important;
+      }
+
+      .hero-section .hero-container {
+        position: relative !important;
+        z-index: 3 !important;
+      }
+
+      .hero-scholarship-bar {
+        background: #3f2a8c !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        padding: 0.55rem 1rem !important;
+      }
+
+      .hero-scholarship-text {
+        margin: 0 !important;
+        color: #fff !important;
+        font-size: clamp(0.78rem, 2.8vw, 0.95rem) !important;
+        font-weight: 600 !important;
+        line-height: 1.4 !important;
+      }
+
+      .features-section {
+        position: relative !important;
+        z-index: 1 !important;
+        background: linear-gradient(180deg, #ffffff 0%, #faf6fc 55%, #f5f0fa 100%) !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        clear: both;
+      }
+
+      /* Hero button + logos — inline so changes show even when CSS is cached */
+      .hero-section .header-logo-jgu {
+        height: 5.75rem !important;
+        max-height: 5.75rem !important;
+        width: auto !important;
+      }
+
+      .hero-section .header-logo-jsbf {
+        height: 6.5rem !important;
+        max-height: 6.5rem !important;
+        width: auto !important;
+      }
+
+      .hero-section .btn-apply-now {
+        display: inline-block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-top: 1.25rem !important;
+        margin-bottom: 0.75rem !important;
+        padding: 0.9rem 2.85rem !important;
+        background-color: #ffffff !important;
+        background-image:
+          linear-gradient(#ffffff, #ffffff),
+          linear-gradient(135deg, #1a237e 0%, #3949ab 22%, #7b1fa2 55%, #00acc1 100%) !important;
+        background-origin: border-box !important;
+        background-clip: padding-box, border-box !important;
+        border: 3px solid transparent !important;
+        border-radius: 50px !important;
+        color: #4a148c !important;
+        font-weight: 800 !important;
+        font-size: clamp(0.92rem, 1.2vw, 1.05rem) !important;
+        letter-spacing: 0.06em !important;
+        text-decoration: none !important;
+        text-transform: uppercase !important;
+        box-shadow: 0 6px 18px rgba(74, 20, 140, 0.16) !important;
+        flex-shrink: 0 !important;
+        position: relative !important;
+        z-index: 12 !important;
+        align-self: flex-start !important;
+        cursor: pointer !important;
+      }
+
+      .hero-section .hero-title {
+        font-size: clamp(1.4rem, 0.7rem + 1.45vw, 2.7rem) !important;
+        line-height: 1.14 !important;
+        overflow: visible !important;
+        padding-top: 0.08em !important;
+      }
+
+      .hero-section .hero-subtitle {
+        font-size: clamp(0.78rem, 0.5rem + 0.55vw, 1.05rem) !important;
+        font-weight: 800 !important;
+        line-height: 1.35 !important;
+      }
+
+      .hero-section .hero-subtitle-line {
+        display: inline !important;
+        white-space: normal !important;
+      }
+
+      .hero-section .hero-right {
+        max-width: min(28rem, 32vw) !important;
+        z-index: 20 !important;
+      }
+
+      .hero-section .hero-enquiry-card {
+        width: 100% !important;
+        min-height: 22rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: hidden !important;
+      }
+
+      .hero-section .hero-enquiry-card h3 {
+        font-size: 1.25rem !important;
+        flex-shrink: 0 !important;
+      }
+
+      .hero-section .hero-npf-scroll {
+        flex: 1 1 auto !important;
+        min-height: 0 !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        overscroll-behavior: contain !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      @media screen and (max-width: 991px) {
+        .hero-section {
+          min-height: auto !important;
+          max-height: none !important;
+          overflow-x: clip !important;
+          overflow-y: visible !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .hero-section .header-logo-jgu,
+        .hero-section .header-logo-jsbf {
+          height: 3.5rem !important;
+          max-height: 3.5rem !important;
+        }
+
+        .hero-section .btn-apply-now {
+          padding: 0.85rem 2.4rem !important;
+          font-size: clamp(0.88rem, 2.8vw, 1rem) !important;
+          border-width: 3px !important;
+          align-self: center !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        .hero-section .hero-right {
+          width: min(100%, 30rem) !important;
+          max-width: min(100%, 30rem) !important;
+          margin-bottom: clamp(1.25rem, 4vw, 2rem) !important;
+        }
+
+        .hero-section .hero-enquiry-card {
+          min-height: 18rem !important;
+          max-height: min(32rem, 78vh) !important;
+        }
+
+        .hero-section .hero-npf-scroll {
+          max-height: min(360px, 54vh) !important;
+          overflow-y: auto !important;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        /* SCALE-INVARIANT HERO.
+           Everything is sized in vh (bounded by clamp) so the layout occupies the
+           same physical fraction of the screen at 100% / 125% / 150% Windows
+           scaling — scaling only remaps CSS px of one physical screen, and vh
+           tracks that physical screen. The hero is pinned to exactly one viewport
+           with the info bar on the bottom grid row, so it is always fully visible
+           and nothing crops. */
+        .hero-section {
+          display: grid !important;
+          grid-template-rows: minmax(0, 1fr) auto !important;
+          grid-template-columns: minmax(0, 1fr) !important;
+          height: 100dvh !important;
+          min-height: 100dvh !important;
+          max-height: 100dvh !important;
+          box-sizing: border-box !important;
+          overflow: hidden !important;
+          --hero-form-bar-gap: clamp(0.75rem, 2.2vh, 2rem);
+          --hero-image-info-gap: 0;
+          --hero-form-iframe-h: 100%;
+          --hero-img-max: min(84vh, 52rem);
+        }
+
+        .hero-section .hero-container {
+          grid-row: 1 !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          max-width: min(1560px, 94vw) !important;
+          overflow: hidden !important;
+          display: flex !important;
+          flex-direction: column !important;
+          justify-content: flex-start !important;
+          padding-top: clamp(0.4rem, 1.4vh, 1rem) !important;
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
+        }
+
+        .hero-section .hero-header {
+          flex: 0 0 auto !important;
+          padding-bottom: clamp(0.2rem, 0.8vh, 0.625rem) !important;
+        }
+
+        .hero-section .header-logo-jgu {
+          height: clamp(4.2rem, 9.5vh, 6rem) !important;
+          max-height: clamp(4.2rem, 9.5vh, 6rem) !important;
+          width: auto !important;
+        }
+
+        .hero-section .header-logo-jsbf {
+          height: clamp(5.1rem, 15.8vh, 10rem) !important;
+          max-height: clamp(5.1rem, 15.8vh, 10rem) !important;
+          width: auto !important;
+        }
+
+        .hero-section .hero-main {
+          flex: 1 1 auto !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          overflow: hidden !important;
+          align-items: end !important;
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
+          box-sizing: border-box !important;
+          /* Wider image column; title stays readable; enquiry not dominant */
+          grid-template-columns: minmax(15rem, 1.2fr) minmax(14rem, 1.65fr) minmax(13.5rem, 0.85fr) !important;
+          column-gap: clamp(0.35rem, 0.8vw, 0.85rem) !important;
+        }
+
+        @media screen and (max-width: 1440px) {
+          .hero-section .hero-main {
+            grid-template-columns: minmax(14rem, 1.15fr) minmax(13rem, 1.7fr) minmax(12.5rem, 0.82fr) !important;
+          }
+        }
+
+        @media screen and (max-width: 1199px) {
+          .hero-section .hero-main {
+            grid-template-columns: minmax(12.5rem, 1.12fr) minmax(11.5rem, 1.65fr) minmax(11.5rem, 0.88fr) !important;
+          }
+        }
+
+        .hero-left {
+          overflow: visible !important;
+          align-self: center !important;
+          justify-content: center !important;
+          min-height: 0 !important;
+          margin-top: 0 !important;
+          padding-top: 0.35rem !important;
+          padding-bottom: 0.35rem !important;
+          padding-right: 0.35rem !important;
+          max-height: 100% !important;
+          box-sizing: border-box !important;
+          position: relative !important;
+          z-index: 4 !important;
+          min-width: 0 !important;
+        }
+
+        .hero-left .btn-apply-now,
+        .hero-section .btn-apply-now {
+          margin-bottom: 1rem !important;
+          z-index: 12 !important;
+          position: relative !important;
+        }
+
+        /* Width-based type so laptop/desktop stay balanced (no vh-driven wraps) */
+        .hero-section .hero-title {
+          font-size: clamp(1.35rem, 0.55rem + 1.35vw, 2.55rem) !important;
+          line-height: 1.12 !important;
+          overflow: visible !important;
+          padding-top: 0.06em !important;
+          margin-top: 0 !important;
+          max-width: 100% !important;
+        }
+
+        .hero-section .hero-title-gradient {
+          display: flex !important;
+          flex-direction: column !important;
+          flex-wrap: nowrap !important;
+          align-items: flex-start !important;
+          row-gap: 0 !important;
+        }
+
+        .hero-section .hero-title-keep {
+          display: block !important;
+          white-space: nowrap !important;
+          max-width: 100% !important;
+        }
+
+        .hero-section .hero-title-rule {
+          margin-top: clamp(0.4rem, 1.2vh, 0.85rem) !important;
+        }
+
+        .hero-section .hero-subtitle {
+          font-size: clamp(0.78rem, 0.45rem + 0.55vw, 1.02rem) !important;
+          margin-top: clamp(0.55rem, 1.4vh, 1rem) !important;
+          line-height: 1.35 !important;
+          max-width: 36em !important;
+        }
+
+        .hero-section .hero-description {
+          font-size: clamp(0.8rem, 0.5rem + 0.45vw, 1rem) !important;
+          margin-top: clamp(0.4rem, 1.1vh, 0.75rem) !important;
+          line-height: 1.45 !important;
+        }
+
+        .hero-section .btn-apply-now {
+          margin-top: clamp(0.7rem, 1.8vh, 1.25rem) !important;
+          padding: clamp(0.65rem, 1.4vh, 0.95rem) clamp(1.8rem, 2.4vw, 2.85rem) !important;
+          font-size: clamp(0.85rem, 0.55rem + 0.4vw, 1.05rem) !important;
+        }
+
+        .hero-info-bar {
+          grid-row: 2 !important;
+          margin-top: var(--hero-image-info-gap) !important;
+          flex: none !important;
+          flex-shrink: 0 !important;
+          display: block !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          padding: clamp(0.85rem, 2.3vh, 1.55rem) 0 !important;
+        }
+
+        .hero-section .hero-info-inner {
+          max-width: min(1560px, 94vw) !important;
+        }
+
+        .hero-section .hero-info-item {
+          font-size: clamp(1rem, 2.6vh, 1.45rem) !important;
+        }
+
+        .hero-center {
+          align-self: end !important;
+          height: 100% !important;
+          min-height: 0 !important;
+          transform: none !important;
+          margin: 0 !important;
+          padding: 0 0.25rem !important;
+          align-items: flex-end !important;
+          justify-content: center !important;
+          line-height: 0 !important;
+          overflow: hidden !important;
+          z-index: 2 !important;
+        }
+
+        .hero-student-stack {
+          height: 100% !important;
+          max-height: 100% !important;
+          width: 100% !important;
+          align-items: flex-end !important;
+          justify-content: center !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: hidden !important;
+        }
+
+        .hero-student-img {
+          max-height: min(100%, var(--hero-img-max, 78vh)) !important;
+          max-width: 100% !important;
+          width: auto !important;
+          height: auto !important;
+          object-fit: contain !important;
+          object-position: bottom center !important;
+          transform: none !important;
+          margin: 0 auto !important;
+          border-radius: 0 !important;
+          filter: none !important;
+        }
+
+        .hero-right {
+          max-width: min(30rem, 34vw) !important;
+          max-height: 100% !important;
+          min-height: 0 !important;
+          overflow: hidden !important;
+          z-index: 20 !important;
+          align-self: stretch !important;
+          justify-self: end !important;
+          display: flex !important;
+          flex-direction: column !important;
+          margin-top: clamp(0.5rem, 2vh, 1.75rem) !important;
+          margin-bottom: var(--hero-form-bar-gap) !important;
+        }
+
+        .hero-enquiry-card {
+          flex: 1 1 auto !important;
+          max-height: 100% !important;
+          min-height: 0 !important;
+          display: flex !important;
+          flex-direction: column !important;
+          overflow: hidden !important;
+          padding: clamp(0.9rem, 2.4vh, 1.6rem) clamp(0.9rem, 1.6vw, 1.5rem) clamp(0.75rem, 1.6vh, 1.25rem) !important;
+        }
+
+        .hero-section .hero-enquiry-card h3 {
+          font-size: clamp(1.25rem, 3.2vh, 1.9rem) !important;
+          margin-bottom: clamp(0.6rem, 1.8vh, 1.3rem) !important;
+          flex-shrink: 0 !important;
+        }
+
+        .hero-npf-scroll {
+          flex: 1 1 auto !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        .hero-section .hero-right {
+          max-width: min(32rem, 32vw) !important;
+        }
+      }
+
+      /* 150% Windows scaling only (very short viewport ≈627px). 100% (~940px) and
+         125% (~752px) are ABOVE this breakpoint and stay exactly as they are.
+         Here we scale the hero down just enough that the whole left column
+         (heading + text + button) and the info bar fit without clipping. */
+      @media screen and (min-width: 992px) and (max-height: 680px) {
+        .hero-section {
+          --hero-form-bar-gap: clamp(0.5rem, 1.6vh, 1rem) !important;
+          --hero-img-max: min(76vh, 30rem) !important;
+          /* Form is taller than the (shrunk) card → the card's scroll area shows
+             its own scrollbar so the whole form incl. SUBMIT is reachable. */
+          --hero-form-iframe-h: 32rem !important;
+        }
+
+        .hero-section .hero-header {
+          padding-bottom: 0.2rem !important;
+        }
+
+        .hero-section .header-logo-jgu {
+          height: clamp(3rem, 8.6vh, 5rem) !important;
+          max-height: clamp(3rem, 8.6vh, 5rem) !important;
+        }
+
+        .hero-section .header-logo-jsbf {
+          height: clamp(3.4rem, 9.6vh, 5.6rem) !important;
+          max-height: clamp(3.4rem, 9.6vh, 5.6rem) !important;
+        }
+
+        .hero-section .hero-title {
+          font-size: clamp(1.2rem, 0.4rem + 1.2vw, 1.85rem) !important;
+          line-height: 1.12 !important;
+          overflow: visible !important;
+          padding-top: 0.06em !important;
+        }
+
+        .hero-section .hero-title-rule {
+          margin-top: clamp(0.25rem, 0.8vh, 0.45rem) !important;
+        }
+
+        .hero-section .hero-subtitle {
+          font-size: clamp(0.72rem, 0.4rem + 0.45vw, 0.92rem) !important;
+          margin-top: clamp(0.35rem, 1vh, 0.6rem) !important;
+          line-height: 1.3 !important;
+        }
+
+        .hero-section .hero-description {
+          font-size: clamp(0.72rem, 0.4rem + 0.4vw, 0.9rem) !important;
+          margin-top: clamp(0.25rem, 0.8vh, 0.5rem) !important;
+          line-height: 1.35 !important;
+        }
+
+        .hero-section .btn-apply-now {
+          margin-top: clamp(0.45rem, 1.4vh, 0.8rem) !important;
+          padding: clamp(0.5rem, 1.3vh, 0.75rem) clamp(1.8rem, 3vh, 2.4rem) !important;
+          font-size: clamp(0.78rem, 1.9vh, 0.95rem) !important;
+        }
+
+        .hero-section .hero-info-item {
+          font-size: clamp(0.82rem, 2.1vh, 1.05rem) !important;
+        }
+
+        .hero-section .hero-enquiry-card h3 {
+          font-size: clamp(1.1rem, 2.7vh, 1.5rem) !important;
+          margin-bottom: clamp(0.4rem, 1.3vh, 0.85rem) !important;
+        }
+
+        /* Enquiry card fits the viewport; the form scrolls inside it, and the
+           card keeps its rounded corners (incl. the bottom) — the scroll area is
+           inset by padding and its bottom corners are rounded so the tall iframe
+           never squares off the card edge. */
+        .hero-section .hero-right {
+          align-self: stretch !important;
+          max-height: 100% !important;
+          overflow: hidden !important;
+        }
+
+        .hero-section .hero-enquiry-card {
+          max-height: 100% !important;
+          overflow: hidden !important;
+          border-radius: 1.25rem !important;
+          padding-bottom: clamp(0.85rem, 2.2vh, 1.25rem) !important;
+        }
+
+        .hero-section .hero-npf-scroll {
+          flex: 1 1 auto !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+          border-bottom-left-radius: 0.9rem !important;
+          border-bottom-right-radius: 0.9rem !important;
+        }
+
+        .hero-section .hero-enquiry-card .npf_wgts,
+        .hero-section .hero-enquiry-card .npf_wgts iframe {
+          height: 32rem !important;
+          max-height: 32rem !important;
+          min-height: 32rem !important;
+        }
+      }
+
+    </style>
 </head>
-
 <body>
-
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe
-src="https://www.googletagmanager.com/ns.html?id=GTM-N94ZC5LW"
-height="0" width="0"
-style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N94ZC5LW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-  <div>
-    <div class="main-container">
-    <div class="top-section ">
-      <div class="left-text">
-        <section class="logo-section">
-          <div class="logo-container">
-            <img src="assets/logo-1.png" alt="Jindal Global University Logo" class="logo-img">
-          </div>
-
-          <div class="logo-container">
-            <img src="assets/logo-2.png" alt="Jindal School of Global Health" class="logo-img">
-          </div>
-        </section>
-        <h1 style="line-height: 1.2;">M.Sc. in <span>Global Health & Human Development</span></h1>
-        <h2>DEVELOP EXPERTISE IN THE CONVERGENCE OF GLOBAL HEALTH, POLICY, AND DEVELOPMENT PRACTICE.
-        </h2>
-
-        <!-- Mobile Globe Image -->
-      <div class="mobile-globe">
-        <img src="assets/hero-img.png" alt="Globe Image">
-      </div>
-
-        <button  class="gradient-btn npfWidgetButton npfWidget-04891f022bbb3428ba0b07cb3d16d9fa" style="padding: 15px 20px;">ENROLL NOW</button>
-      </div>
-
-      <div class="right-img">
-        <img src="assets/hero-img.png" class="circle-img" />
-      </div>
-
-                 <!-- RIGHT FORM -->
-  <div class="hero-form">
-    <div class="npf_wgts" data-height="400px" data-w="04891f022bbb3428ba0b07cb3d16d9fa"></div>
-  </div>
-    </div>
-
-     <div class="info-bar">
-    <div class="info-item">
-      <strong>Postgraduate</strong><br/>
-      <strong>Degree</strong>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="info-item">
-      <strong>Duration:</strong><br/>
-      <strong>1 Year</strong>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="info-item">
-      <strong>Batch Starts:</strong><br/>
-      <strong>March 2027</strong>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="info-item">
-      <strong>Fully Online</strong><br/>
-      <strong>Programme</strong>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="info-item">
-      <strong>Easy EMI</strong><br/>
-      <strong>Options</strong>
-    </div>
-  </div>
-</div>
-    <h2 class="title-center">What’s in it for you?</h2>
-
-    <!-- Swiper Slider -->
-<div class="swiper mySwiper container">
-  <div class="swiper-wrapper">
-
-    <!-- Slide 1 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/crafted.png');">
-        <div class="feature-text">
-          <h3>A Well-Crafted Academic Blend</h3>
-          <p>A focused mix of public health, development studies, and policy frameworks for deeper global insight.​</p>
-        </div>
+<section class="hero-section section-global">
+  <div class="container hero-container">
+    <div class="hero-header">
+      <div class="header-logos">
+        <img src="assets/logo-1.png" class="header-logo-img header-logo-jgu" alt="Jindal Global University Logo">
+        <img src="assets/logo-2.png" class="header-logo-img header-logo-school" alt="Jindal School of Global Health">
       </div>
     </div>
 
-    <!-- Slide 2 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/clarity.png'); ">
-        <div class="feature-text">
-          <h3>Clarity Through Evidence & Analysis</h3>
-          <p>Build the ability to decode data, assess systems, and design interventions rooted in research.​</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/Cugh.png'); ">
-        <div class="feature-text">
-          <h3>Global Health Network (CUGH)</h3>
-          <p>Learn from global experts, backed by JGU’s presence in the Consortium of Universities for Global Health (CUGH), a leading international health network.​</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 4 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/learning-fits.png');">
-        <div class="feature-text">
-          <h3>Learning That Fits Your Life</h3>
-          <p>A fully online, flexible structure that supports working professionals and ambitious graduates.​</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 5 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/skill-translate.png');">
-        <div class="feature-text">
-          <h3>Skills That Translate to Impact</h3>
-          <p>Case-based learning and analytical practice that sharpen problem-solving for real-world challenges.​</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 6 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/pathways.png');">
-        <div class="feature-text">
-          <h3>Pathways to Global Opportunities</h3>
-          <p>Prepare for meaningful roles across public health, NGOs, development agencies, and policy institutions.​</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 7 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/competencies.png');">
-        <div class="feature-text">
-          <h3>Competencies for a Changing World</h3>
-          <p>Strengthen capabilities in systems thinking, evaluation, analytics, ethics, and governance.​</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Pagination Dots -->
-  <div class="swiper-pagination"></div>
-</div>
-</div>
-
-
-<!-- HERO SECTION -->
-<section class="hero-section">
-  <div class="hero-container">
-
-    <!-- HEADING -->
-    <div class="hero-heading-wrap">
-      <h1 class="hero-heading">About the Programme</h1>
-    </div>
-
-    <!-- LEFT IMAGE WRAPPER -->
-    <div class="hero-images-wrapper">
-      <div class="hero-image-col">
-        <img src="assets/hero-1.png" alt="Campus Image" style="height: 500px">
-      </div>
-
-      <div class="hero-image-col">
-        <a href="#" class="hero-btn npfWidgetButton npfWidget-04891f022bbb3428ba0b07cb3d16d9fa" style="padding: 10px; color: #fff">
-           Learn More →
-        </a>
-
-        <img src="assets/hero-2.png" alt="Policy Image" style="height: 440px">
-      </div>
-    </div>
-
-    <!-- CONTENT -->
-    <div class="hero-text">
-       <p>
-        The <strong>M.Sc. in Global Health & Human Development</strong> is an intensive, interdisciplinary online programme that equips learners to understand and tackle the complex dynamics of global health. The curriculum integrates public health science, epidemiology, health systems research, policy analysis, and human development theory. This provides students with a clear, research-driven framework to analyze health disparities and develop effective, sustainable interventions.
-      </p>
-
-     <p>
-      Taught by renowned faculty and global practitioners, the programme offers a flexible yet rigorous learning environment, making it ideal for recent graduates and established professionals alike. Through case-based learning and practical analytical work, students gain hands-on experience, graduating prepared to make meaningful contributions to public health organizations, development agencies, policy institutions, and the humanitarian sector.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- FEES Structure Table Section -->
- <section class="fees-section" style="background-image: url('assets/fees-structure-bg1.png');background-size: cover;background-position: center;background-repeat: no-repeat;">
-  <div class="fees-inner-container">
-  <div class="fees-tabs">
-    <button class="fees-tab active" data-tab="fees">Fees Structure</button>
-    <button class="fees-tab" data-tab="eligibility">Eligibility</button>
-  </div>
-
-  <div class="table-wrapper" id="contentArea">
-    <!-- Default Fees Table -->
-    <table class="fees-table">
-      <thead>
-        <tr>
-          <th>Fee Category</th>
-          <th>Amount</th>
-          <th>Due Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Registration Amount</td>
-          <td>INR 25,000 </td>
-          <td>Upon acceptance of the offer letter</td>
-        </tr>
-        <tr>
-          <td>1st Installment</td>
-          <td>INR 1,25,000</td>
-          <td>Before Batch Commencement</td>
-        </tr>
-        <tr>
-          <td>2nd Installment</td>
-          <td>INR 1,25,000</td>
-          <td>By 15th Jul 2027</td>
-        </tr>
-        <tr class="total">
-          <td>Total Tuition Fee</td>
-          <td>INR 2,75,000</td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  </div>
-</section>
-
-
-
-<!-- Need To Know More Section -->
-<section class="info-section">
-  <div class="right">
-        <img src="assets/need-to-know.png" alt="Heritage Image">
-    </div>
-    <div class="left">
-      <h2>Need to know more?</h2>
-      <!-- Mobile Globe Image -->
-      <div class="mobile-globe">
-        <img src="assets/need-to-know.png" alt="Globe Image">
-      </div>
-        <p>
-            Explore the <strong>M.Sc. in Global Health & Human Development</strong> in detail by downloading the full course brochure.
+    <div class="hero-main">
+      <div class="hero-bg-circuit" aria-hidden="true"></div>
+      <div class="hero-left">
+        <h1 class="hero-title">
+          <span class="hero-title-line hero-title-line--lead">
+            <span class="hero-title-base">M.Sc. in</span>
+          </span>
+          <span class="hero-title-gradient">
+            <span class="hero-title-keep">Global Health &amp;</span>
+            <span class="hero-title-keep">Human Development</span>
+          </span>
+        </h1>
+        <div class="hero-title-rule" aria-hidden="true"></div>
+        <p class="hero-subtitle">
+          <span class="hero-subtitle-line">DEVELOP EXPERTISE IN THE CONVERGENCE OF GLOBAL HEALTH, POLICY, AND DEVELOPMENT PRACTICE.</span>
         </p>
-        <p>Get comprehensive insights on curriculum, faculty, learning outcomes, and career pathways.</p>
+        <button type="button" class="npfWidgetButton npfWidget-04891f022bbb3428ba0b07cb3d16d9fa hero-npf-trigger" tabindex="-1" aria-hidden="true">ENROLL NOW</button>
+        <a href="#" class="btn-apply-now" id="heroApplyNowBtn" role="button">ENROLL NOW &nbsp;→</a>
+      </div>
 
-        <button class=" enquire-btn npfWidgetButton npfWidget-04891f022bbb3428ba0b07cb3d16d9fa" style="padding: 15px 20px;">DOWNLOAD BROCHURE</button>
+      <div class="hero-center">
+        <div class="hero-student-stack">
+          <img src="assets/hero-img.png" alt="M.Sc. in Global Health &amp; Human Development" class="hero-student-img">
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-enquiry-card">
+          <h3>ENQUIRE HERE!</h3>
+          <div class="hero-npf-scroll">
+            <div class="npf_wgts" data-height="400px" data-w="04891f022bbb3428ba0b07cb3d16d9fa"></div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="hero-bottom-bars">
+    <div class="hero-info-bar">
+      <div class="hero-info-inner">
+        <div class="hero-info-item"><strong>Postgraduate Degree</strong></div>
+        <div class="hero-info-item"><strong>Duration: 1 Year</strong></div>
+        <div class="hero-info-item"><strong>Batch Starts: March 2027</strong></div>
+        <div class="hero-info-item"><strong>Fully Online Programme</strong></div>
+        <div class="hero-info-item"><strong>Easy EMI Options</strong></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Museology Compare Table -->
+<section class="features-section section-global">
+  <div class="container features-container">
+    <h2 class="features-title">What’s in it for you?</h2>
+    <div class="features-slider-wrap">
+      <button class="features-arrow prev" type="button" aria-label="Previous feature">&#10094;</button>
+      <div class="features-slider-viewport" id="featuresSlider">
+        <div class="features-slide">
+          <div class="feature-card">
+            <img src="assets/crafted.png" alt="A Well-Crafted Academic Blend" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">A Well-Crafted Academic Blend</h3>
+              <p class="card-text">A focused mix of public health, development studies, and policy frameworks for deeper global insight.​</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/clarity.png" alt="Clarity Through Evidence &amp; Analysis" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Clarity Through Evidence & Analysis</h3>
+              <p class="card-text">Build the ability to decode data, assess systems, and design interventions rooted in research.​</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/Cugh.png" alt="Global Health Network (CUGH)" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Global Health Network (CUGH)</h3>
+              <p class="card-text">Learn from global experts, backed by JGU’s presence in the Consortium of Universities for Global Health (CUGH), a leading international health network.​</p>
+            </div>
+          </div>
+        </div>
+        <div class="features-slide">
+          <div class="feature-card">
+            <img src="assets/learning-fits.png" alt="Learning That Fits Your Life" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Learning That Fits Your Life</h3>
+              <p class="card-text">A fully online, flexible structure that supports working professionals and ambitious graduates.​</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/skill-translate.png" alt="Skills That Translate to Impact" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Skills That Translate to Impact</h3>
+              <p class="card-text">Case-based learning and analytical practice that sharpen problem-solving for real-world challenges.​</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/pathways.png" alt="Pathways to Global Opportunities" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Pathways to Global Opportunities</h3>
+              <p class="card-text">Prepare for meaningful roles across public health, NGOs, development agencies, and policy institutions.​</p>
+            </div>
+          </div>
+        </div>
+        <div class="features-slide">
+          <div class="feature-card">
+            <img src="assets/competencies.png" alt="Competencies for a Changing World" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Competencies for a Changing World</h3>
+              <p class="card-text">Strengthen capabilities in systems thinking, evaluation, analytics, ethics, and governance.​</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="features-arrow next" type="button" aria-label="Next feature">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<section class="programme-overview-section section-global" id="about">
+  <div class="container programme-overview-container">
+    <div class="programme-overview-inner">
+      <div class="programme-overview-content">
+        <h2 class="programme-overview-heading">About the Programme</h2>
+        <div class="programme-overview-copy">
+          <p class="programme-overview-text">
+        The <strong>M.Sc. in Global Health &amp; Human Development</strong> is an intensive, interdisciplinary online programme that equips learners to understand and tackle the complex dynamics of global health. The curriculum integrates public health science, epidemiology, health systems research, policy analysis, and human development theory. This provides students with a clear, research-driven framework to analyze health disparities and develop effective, sustainable interventions.
+          </p>
+          <p class="programme-overview-text">
+      Taught by renowned faculty and global practitioners, the programme offers a flexible yet rigorous learning environment, making it ideal for recent graduates and established professionals alike. Through case-based learning and practical analytical work, students gain hands-on experience, graduating prepared to make meaningful contributions to public health organizations, development agencies, policy institutions, and the humanitarian sector.
+          </p>
+        </div>
+      </div>
+      <div class="programme-overview-media">
+        <figure class="programme-overview-campus">
+          <img src="assets/hero-1.png" alt="Campus Image" class="programme-overview-img">
+        </figure>
+        <div class="programme-overview-side">
+          <a href="#" class="programme-learn-more-btn npfWidgetButton npfWidget-04891f022bbb3428ba0b07cb3d16d9fa">
+            <span class="programme-learn-more-text">Learn More</span>
+            <span class="programme-learn-more-arrow" aria-hidden="true">&#8592;</span>
+          </a>
+          <figure class="programme-overview-finance">
+            <img src="assets/hero-2.png" alt="Policy Image" class="programme-overview-img">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="know-more-section section-global">
+  <div class="container know-more-container">
+    <div class="know-more-inner">
+      <div class="know-more-media">
+        <img src="assets/need-to-know.png" alt="Globe Image" class="know-more-img">
+      </div>
+      <div class="know-more-content">
+        <h3 class="know-more-title">Need to know more?</h3>
+        <p class="know-more-lead">Explore the <strong>M.Sc. in Global Health &amp; Human Development</strong> in detail by downloading the full course brochure.</p>
+        <p class="know-more-text">Get comprehensive insights on curriculum, faculty, learning outcomes, and career pathways.</p>
+        <a href="#" class="btn know-more-cta font-weight-bold npfWidgetButton npfWidget-04891f022bbb3428ba0b07cb3d16d9fa">DOWNLOAD BROCHURE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tuition-section section-global" id="fees">
+  <div class="tuition-panel tuition-panel--fees" id="tuitionPanel">
+    <img class="tuition-panel-bg" id="tuitionPanelBg" src="assets/fees-structure-bg1.png" alt="" aria-hidden="true">
+    <div class="tuition-panel-overlay" aria-hidden="true"></div>
+    <div class="tuition-content">
+      <div class="tuition-tabs" role="tablist" aria-label="Tuition information">
+        <button type="button" class="tuition-tab active" role="tab" id="tuitionTabBtnFees" aria-selected="true" aria-controls="tuitionTabFees" data-tab="fees">
+          <span class="tuition-tab-text"><span class="tuition-tab-word">Tuition</span> <span class="tuition-tab-word tuition-tab-word--gradient">&amp; Financing</span></span>
+        </button>
+        <button type="button" class="tuition-tab" role="tab" id="tuitionTabBtnEligibility" aria-selected="false" aria-controls="tuitionTabEligibility" data-tab="eligibility">
+          <span class="tuition-tab-text"><span class="tuition-tab-word">Eligibility</span></span>
+        </button>
+      </div>
+
+      <div class="tuition-tab-panel active" id="tuitionTabFees" role="tabpanel" aria-labelledby="tuitionTabBtnFees">
+        <p class="tuition-total-line"><strong>Total Tuition Fee: INR 2,75,000</strong></p>
+        <div class="tuition-table-wrap">
+          <table class="tuition-table">
+            <thead>
+              <tr>
+                <th>Fee Category</th>
+                <th>Amount</th>
+                <th>Due Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Registration Amount</td>
+                <td>INR 25,000 </td>
+                <td>Upon acceptance of the offer letter</td>
+              </tr>
+              <tr>
+                <td>1st Installment</td>
+                <td>INR 1,25,000</td>
+                <td>Before Batch Commencement</td>
+              </tr>
+              <tr>
+                <td>2nd Installment</td>
+                <td>INR 1,25,000</td>
+                <td>By 15th Jul 2027</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+<div class="payment-options-block">
+          <div class="payment-options-header">
+            <p class="payment-options-eyebrow">Flexible Financing</p>
+            <h3 class="payment-options-title">Tuition Fee &amp; Payment Options</h3>
+            <p class="payment-options-intro">We offer flexible payment options to help learners manage their programme fees conveniently. Available payment options may vary depending on the programme and applicant category.</p>
+          </div>
+
+          <section class="payment-audience" aria-labelledby="pay-indian-heading">
+            <div class="payment-audience-head">
+              <h4 class="payment-options-subtitle" id="pay-indian-heading">For Indian Nationals</h4>
+              <p class="payment-options-lead">Choose from the following payment options:</p>
+            </div>
+            <div class="payment-cards">
+              <article class="payment-card">
+                <span class="payment-card-tag">Option 1</span>
+                <h5 class="payment-option-name">Full Payment</h5>
+                <p class="payment-card-highlight">Pay remaining fee in one go</p>
+                <ul>
+                  <li><strong>Registration Fee:</strong> Pay at the time of registration.</li>
+                  <li><strong>Remaining Programme Fee:</strong> Pay within 10 days from registration.</li>
+                </ul>
+              </article>
+              <article class="payment-card payment-card--jodo">
+                <span class="payment-card-tag">Option 2</span>
+                <h5 class="payment-option-name">Jodo Flex</h5>
+                <p class="payment-card-highlight">3, 6 or 9 instalments</p>
+                <ul>
+                  <li><strong>Registration Fee:</strong> Pay at the time of registration.</li>
+                  <li><strong>Remaining Programme Fee:</strong> Structured instalment plan of 3, 6, or 9 instalments, as per applicable schedule and terms.</li>
+                </ul>
+              </article>
+              <article class="payment-card payment-card--jodo payment-card--featured">
+                <span class="payment-card-tag">Option 3</span>
+                <span class="payment-card-badge">Popular</span>
+                <h5 class="payment-option-name">Jodo EMI &ndash; 12 Months</h5>
+                <p class="payment-card-highlight">Monthly EMI over 12 months</p>
+                <ul>
+                  <li><strong>Registration Fee:</strong> Pay at the time of registration.</li>
+                  <li><strong>Remaining Programme Fee:</strong> Monthly instalments over 12 months, subject to eligibility, approval, and terms.</li>
+                </ul>
+              </article>
+            </div>
+            <p class="payment-options-note"><strong>Important Note:</strong> Indian citizens, including NRIs with valid Aadhaar and PAN, may use Indian National payment options, subject to eligibility and verification.</p>
+          </section>
+
+          <section class="payment-audience" aria-labelledby="pay-foreign-heading">
+            <div class="payment-audience-head">
+              <h4 class="payment-options-subtitle" id="pay-foreign-heading">For Foreign Nationals</h4>
+              <p class="payment-options-lead">Choose from the following payment options:</p>
+            </div>
+            <div class="payment-cards payment-cards--two">
+              <article class="payment-card">
+                <span class="payment-card-tag">Option 1</span>
+                <h5 class="payment-option-name">Full Payment</h5>
+                <p class="payment-card-highlight">Pay remaining fee in one go</p>
+                <ul>
+                  <li><strong>Registration Fee:</strong> Pay at the time of registration.</li>
+                  <li><strong>Remaining Programme Fee:</strong> Pay within 10 days from registration.</li>
+                </ul>
+              </article>
+              <article class="payment-card">
+                <span class="payment-card-tag">Option 2</span>
+                <h5 class="payment-option-name">Two-Instalment Payment Plan</h5>
+                <p class="payment-card-highlight">2 scheduled instalments</p>
+                <ul>
+                  <li><strong>Registration Fee:</strong> Pay at the time of registration.</li>
+                  <li><strong>Remaining Programme Fee:</strong> Pay the programme fee in two instalments, as per the applicable fee schedule mentioned for the programme.</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="tuition-tab-panel" id="tuitionTabEligibility" role="tabpanel" aria-labelledby="tuitionTabBtnEligibility" hidden>
+        <div class="tuition-eligibility-stack">
+          <div class="tuition-table-wrap">
+            <table class="tuition-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Educational Qualification</td>
+                  <td>Undergraduate degree in any discipline from a recognised university in India or abroad</td>
+                </tr>
+                <tr>
+                  <td>ID Proof (Indian Applicants)</td>
+                  <td>Aadhar Card / PAN Card / Voter ID</td>
+                </tr>
+                <tr>
+                  <td>ID Proof (International Applicants)</td>
+                  <td>Valid Passport</td>
+                </tr>
+                <tr>
+                  <td>Selection Criteria – Short Essay</td>
+                  <td>Candidates will be assessed holistically through their Statement of Purpose (SOP), Curriculum Vitae (CV), and performance in the Aptitude Test, ensuring a comprehensive evaluation of their academic readiness and professional aspirations.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="museology-compare-wrapper">
   <h2 class="museology-heading">
     How Does the <span>M.Sc. in Global Health & Human Development</span> at JGU Stand Apart?
@@ -364,926 +980,352 @@ style="display:none;visibility:hidden"></iframe></noscript>
   </table>
 </div>
 
-<!-- Career Outcome Section -->
-<section class="career-outcomes-section" style="background-image: url('assets/career-outcome-bg.png');background-size: cover;background-position: center;background-repeat: no-repeat;width: 90%;">
+<section class="career-pathways-section section-global">
+  <div class="container career-pathways-container">
+    <div class="career-pathways-panel">
+      <img class="career-pathways-bg" src="assets/career-outcome-bg.png" alt="" aria-hidden="true">
+      <div class="career-pathways-overlay" aria-hidden="true"></div>
+      <div class="career-pathways-inner career-pathways-inner--stacked">
+        <h2 class="career-pathways-title" title="Career Outcomes of M.Sc. in Global Health &amp; Human Development from JGU">Career<br>Outcomes</h2>
+        <div class="career-pathways-cards">
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/global.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Global Health Project Manager / Coordinator</h3>
+            <p class="career-pathway-card-text">Oversee health programmes, development initiatives, and field operations for international organisations.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/public.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Public Health Policy Analyst</h3>
+            <p class="career-pathway-card-text">Support evidence-based policymaking, evaluate health systems, and contribute to national or global policy reforms.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/monitoring.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Monitoring & Evaluation (M&E) Specialist</h3>
+            <p class="career-pathway-card-text">Assess programme effectiveness, measure outcomes, and guide strategic improvements for NGOs and agencies.​​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/consultant.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Consultant – Public Health & Development</h3>
+            <p class="career-pathway-card-text">Provide advisory support to governments, NGOs, multilateral bodies, and consulting firms working in health and development.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/health.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Health Systems & Programme Analyst</h3>
+            <p class="career-pathway-card-text">Analyse health-system challenges and design solutions to strengthen service delivery and equity.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/global-developement.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Global Development & Humanitarian Officer</h3>
+            <p class="career-pathway-card-text">Work with international NGOs and development agencies on health, rights, and community-wellbeing projects.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/research.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Research Associate / Global Health Researcher</h3>
+            <p class="career-pathway-card-text">Conduct research in epidemiology, social determinants, policy impact, and global health governance.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/community.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Community Health & Advocacy Lead</h3>
+            <p class="career-pathway-card-text">Lead grassroots health initiatives, awareness campaigns, and public health interventions.​</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <div class="career-left">
-    <h2>
-      Career Outcomes of M.Sc. in Global Health & Human Development from JGU
+<section class="faculty-section section-global" id="faculty">
+  <div class="container faculty-container">
+    <div class="faculty-header">
+      <h2 class="faculty-title"><span class="faculty-title-meet">Meet Our Faculty</span></h2>
+    </div>
+    <div class="faculty-slider-wrap">
+      <button class="faculty-arrow prev" type="button" aria-label="Previous faculty">&#10094;</button>
+      <button class="faculty-arrow next" type="button" aria-label="Next faculty">&#10095;</button>
+      <div class="faculty-track" id="facultyTrack">
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/stephen.png" alt="Prof. (Dr.) Stephen P. Marks">
+          </div>
+          <h5 class="faculty-name">Prof. (Dr.) Stephen P. Marks</h5>
+          <p class="faculty-role">Professor & Dean, Jindal School of Public Health & Human Development</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/nandita.png" alt="Prof. (Dr.) Nandita Bhan">
+          </div>
+          <h5 class="faculty-name">Prof. (Dr.) Nandita Bhan</h5>
+          <p class="faculty-role">Professor and Vice Dean (Academic Affairs)</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/nitesh.png" alt="Prof. (Dr.) Nitesh Bansal">
+          </div>
+          <h5 class="faculty-name">Prof. (Dr.) Nitesh Bansal</h5>
+          <p class="faculty-role">Professor & Vice Dean, Chief Compliance Officer</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/sneha.png" alt="Prof. (Dr.) Sneha Krishnan">
+          </div>
+          <h5 class="faculty-name">Prof. (Dr.) Sneha Krishnan</h5>
+          <p class="faculty-role">Professor & Chair. Centre for Humanitarian Studies (JSPH)</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/sambhudha.png" alt="Prof. (Dr.) Sambuddha Chaudhuri">
+          </div>
+          <h5 class="faculty-name">Prof. (Dr.) Sambuddha Chaudhuri</h5>
+          <p class="faculty-role">Associate Professor & Assistant Dean- Outreach JSPH</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/abdul.png" alt="Dr. Abdul Kalam Azad">
+          </div>
+          <h5 class="faculty-name">Dr. Abdul Kalam Azad</h5>
+          <p class="faculty-role">Assistant Professor</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/krupali.png" alt="Ms. Krupali Patel">
+          </div>
+          <h5 class="faculty-name">Ms. Krupali Patel</h5>
+          <p class="faculty-role">Lecturer B.Sc (Gujarat University)</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recognition-section section-global">
+  <img class="recognition-bg" src="assets/Recognition-bg.png" alt="" aria-hidden="true">
+  <div class="recognition-container">
+    <h2 class="recognition-title">Recognitions and Accreditations</h2>
+    <div class="recognition-grid recognition-grid--many" id="recognitionGrid">
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-4.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-2.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-main">
+        <img src="assets/recog-3.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-3.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-1.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/5.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-5.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-6.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-7.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-8.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-9.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-10.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-11.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-12.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-13.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-14.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-15.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-16.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-17.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-18.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-19.png" alt="Recognition">
+      </div>
+      <div class="rec-card rec-card-small">
+        <img src="assets/recognition-20.png" alt="Recognition">
+      </div>
+    </div>
+    <div class="recognition-dots" id="recognitionDots" role="tablist" aria-label="Recognition slides"></div>
+  </div>
+</section>
+
+<section class="faq-section section-global" id="faq">
+  <div class="container faq-container">
+    <h2 class="faq-title">
+      <span class="faq-title-main">Frequently Asked Questions</span><span class="faq-title-sub"> (FAQs)</span>
     </h2>
-  </div>
 
-  <div class="career-right">
+    <div class="faq-grid">
+      <div class="faq-col">
+        <div class="accordion faq-accordion" id="faqLeft">
 
-    <!-- WRAPPER FOR BOTH ROWS -->
-    <div class="career-slider-wrapper">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-toggle="collapse" data-target="#faq1">
+                Can I pay the fee in installments?
+              </button>
+            </h2>
+            <div id="faq1" class="collapse show" data-parent="#faqLeft">
+              <div class="accordion-body">
+                Yes. The fee is divided into a Block Amount and two installments for convenience.​
+              </div>
+            </div>
+          </div>
 
-      <!-- 1st ROW -->
-      <div class="career-row" id="row1">
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/global.svg" alt="curator icon" />
-          </span>
-           Global Health Project Manager / Coordinator
-          </h3>
-          <p>Oversee health programmes, development initiatives, and field operations for international organisations.​</p>
-        </div>
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/public.svg" alt="curator icon" />
-          </span>
-           Public Health Policy Analyst
-          </h3>
-          <p>Support evidence-based policymaking, evaluate health systems, and contribute to national or global policy reforms.​</p>
-        </div>
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/monitoring.svg" alt="curator icon" />
-          </span>
-           Monitoring & Evaluation (M&E) Specialist
-          </h3>
-          <p>Assess programme effectiveness, measure outcomes, and guide strategic improvements for NGOs and agencies.​​</p>
-        </div>
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/consultant.svg" alt="curator icon" />
-          </span>
-           Consultant – Public Health & Development
-          </h3>
-          <p>Provide advisory support to governments, NGOs, multilateral bodies, and consulting firms working in health and development.​</p>
-        </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq2">
+                What is the application process?
+              </button>
+            </h2>
+            <div id="faq2" class="collapse" data-parent="#faqLeft">
+              <div class="accordion-body">
+                Applicants must submit an online application along with their Statement of Purpose (SOP) and Curriculum Vitae (CV). Shortlisted candidates appear for an Aptitude Test.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq3">
+                Do I need a background in public health?
+              </button>
+            </h2>
+            <div id="faq3" class="collapse" data-parent="#faqLeft">
+              <div class="accordion-body">
+                No. The programme welcomes applicants from diverse fields and provides a foundational grounding in global health and development.</strong>
+              </div>
+            </div>
+          </div>
+</div>
       </div>
+      <div class="faq-col">
+        <div class="accordion faq-accordion" id="faqRight">
 
-      <!-- 2nd ROW -->
-      <div class="career-row" id="row2">
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/health.svg" alt="curator icon" />
-          </span>
-          Health Systems & Programme Analyst
-          </h3>
-          <p>Analyse health-system challenges and design solutions to strengthen service delivery and equity.​</p>
-        </div>
-        <div class="career-card">
-          <h3>
-          <span class="icon">
-            <img src="assets/global-developement.svg" alt="curator icon" />
-          </span>
-          Global Development & Humanitarian Officer
-          </h3>
-          <p>Work with international NGOs and development agencies on health, rights, and community-wellbeing projects.​</p>
-        </div>
-        <div class="career-card">
-           <h3>
-          <span class="icon">
-            <img src="assets/research.svg" alt="curator icon" />
-          </span>
-          Research Associate / Global Health Researcher
-          </h3>
-          <p>Conduct research in epidemiology, social determinants, policy impact, and global health governance.​</p>
-        </div>
-        <div class="career-card">
-          <h3>
-          <span class="icon">
-            <img src="assets/community.svg" alt="curator icon" />
-          </span>
-         Community Health & Advocacy Lead
-          </h3>
-          <p>Lead grassroots health initiatives, awareness campaigns, and public health interventions.​</p>
-        </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq100">
+                How will I be evaluated for admission?
+              </button>
+            </h2>
+            <div id="faq100" class="collapse" data-parent="#faqRight">
+              <div class="accordion-body">
+                Admissions follow a holistic evaluation based on your SOP, CV, and Aptitude Test performance.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq101">
+                Who is eligible to apply?
+              </button>
+            </h2>
+            <div id="faq101" class="collapse" data-parent="#faqRight">
+              <div class="accordion-body">
+                A bachelor’s degree in any discipline from a recognised institution. Candidates from health, social sciences, development, sciences, or humanities backgrounds are encouraged to apply.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq102">
+                Is there an age limit for admission?
+              </button>
+            </h2>
+            <div id="faq102" class="collapse" data-parent="#faqRight">
+              <div class="accordion-body">
+                No specific age limit is mentioned. The programme is open to eligible learners from diverse backgrounds.
+              </div>
+            </div>
+          </div>
+</div>
       </div>
-
     </div>
-
-    <!-- BUTTONS -->
-    <div class="career-controls">
-      <button id="prevBtn">◀</button>
-      <div class="career-progress"><div id="progressBar"></div></div>
-      <button id="nextBtn">▶</button>
-    </div>
-
   </div>
 </section>
 
-<!-- Faculty Section -->
-
-<section class="faculty-slider-section">
-  <h2 class="title-center" >Meet Our Faculty</h2>
-
-  <div class="faculty-slider-wrapper swiper">
-
-    <button class="faculty-slider-nav faculty-slider-left swiper-button-prev">
-      &#10094;
-    </button>
-
-    <div class="faculty-slider-track swiper-wrapper">
-
-      <div class="faculty-slider-card swiper-slide">
-        <div class="faculty-slider-img-wrapper">
-          <img src="assets/stephen.png" alt="">
+<section class="enquire-section section-global" id="enquire">
+  <div class="container enquire-container">
+    <h2 class="enquire-heading">Enquire Now!</h2>
+    <div class="enquire-card">
+      <div class="enquire-form-panel">
+        <div class="enquire-npf-scroll">
+          <div class="npf_wgts" data-height="400px" data-w="04891f022bbb3428ba0b07cb3d16d9fa"></div>
         </div>
-        <h4 class="faculty-slider-name">Prof. (Dr.) <br/>Stephen P. Marks</h4>
-        <p class="faculty-slider-desc">
-          Professor & Dean, Jindal School of Public Health & Human Development
-        </p>
       </div>
-
-      <div class="faculty-slider-card swiper-slide">
-        <div class="faculty-slider-img-wrapper">
-          <img src="assets/nandita.png" alt="">
+      <div class="enquire-info-panel">
+        <div class="info-section">
+          <h2>Let’s connect and shape your path at JGU!</h2>
+          <p class="info-text">Reach out to know more about programmes, admissions, and opportunities</p>
         </div>
-        <h4 class="faculty-slider-name">Prof. (Dr.) Nandita Bhan</h4>
-        <p class="faculty-slider-desc">
-          Professor and Vice Dean (Academic Affairs)
-        </p>
       </div>
-
-      <div class="faculty-slider-card swiper-slide">
-        <div class="faculty-slider-img-wrapper">
-          <img src="assets/nitesh.png" alt="">
-        </div>
-        <h4 class="faculty-slider-name">Prof. (Dr.) Nitesh Bansal</h4>
-        <p class="faculty-slider-desc">
-         Professor & Vice Dean, Chief Compliance Officer
-        </p>
-      </div>
-
-      <div class="faculty-slider-card swiper-slide">
-        <div class="faculty-slider-img-wrapper">
-          <img src="assets/sneha.png" alt="">
-        </div>
-        <h4 class="faculty-slider-name">Prof. (Dr.) Sneha Krishnan</h4>
-        <p class="faculty-slider-desc">
-          Professor & Chair. Centre for Humanitarian Studies (JSPH)
-        </p>
-      </div>
-
-      <div class="faculty-slider-card swiper-slide">
-        <div class="faculty-slider-img-wrapper">
-          <img src="assets/sambhudha.png" alt="">
-        </div>
-        <h4 class="faculty-slider-name">Prof. (Dr.) Sambuddha Chaudhuri</h4>
-        <p class="faculty-slider-desc">
-          Associate Professor & Assistant Dean- Outreach JSPH
-        </p>
-      </div>
-
-      <div class="faculty-slider-card swiper-slide">
-        <div class="faculty-slider-img-wrapper">
-          <img src="assets/abdul.png" alt="">
-        </div>
-        <h4 class="faculty-slider-name">Dr. Abdul Kalam Azad</h4>
-        <p class="faculty-slider-desc">
-          Assistant Professor 
-        </p>
-      </div>
-
-      <div class="faculty-slider-card swiper-slide">
-        <div class="faculty-slider-img-wrapper">
-          <img src="assets/krupali.png" alt="">
-        </div>
-        <h4 class="faculty-slider-name">Ms. Krupali Patel</h4>
-        <p class="faculty-slider-desc">
-          Lecturer B.Sc<br/>(Gujarat University)
-        </p>
-      </div>
-
     </div>
-
-    <button class="faculty-slider-nav faculty-slider-right swiper-button-next">
-      &#10095;
-    </button>
   </div>
 </section>
 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Recognitions and Accreditations Section -->
- <section class="recognition-section"
-    style="background-image: url('assets/Recognition-bg.png');background-size: cover;background-position: center;background-repeat: no-repeat;">
-    <h2 class="rec-heading">Recognitions and Accreditations</h2>
+<script src="js/main.js"></script>
+<script type="text/javascript">var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.in8.nopaperforms.com/emwgts.js"; document.body.appendChild(s);</script>
+<script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script>
+<script>let npfW04891f022bbb3428ba0b07cb3d16d9fa=new NpfWidgetsInit({'widgetId':'04891f022bbb3428ba0b07cb3d16d9fa','baseurl':'widgets.in8.nopaperforms.com','formTitle':'Enquiry Form','titleColor':'#FF0033','backgroundColor':'#ddd','iframeHeight':'500px','buttonbgColor':'#00C2CB','buttonTextColor':'#FFF'});</script>
 
-    <div class="swiper recSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-4.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-2.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recog-3.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-3.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide ">
-          <div class="rec-card">
-            <img src="assets/recognition-1.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide ">
-          <div class="rec-card">
-            <img src="assets/5.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide ">
-          <div class="rec-card">
-            <img src="assets/recognition-5.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide ">
-          <div class="rec-card">
-            <img src="assets/recognition-6.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide ">
-          <div class="rec-card">
-            <img src="assets/recognition-7.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-8.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-9.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-10.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-11.png" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-12.png" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-13.png" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-14.png" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-15.png" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-16.png" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-17.png" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-18.png" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-19.png" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="rec-card">
-            <img src="assets/recognition-20.png" alt="">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-<!-- FAQ Section -->
- <section class="faq-section">
-  <h2 class="faq-heading">Frequently Asked Questions <span>(FAQs)</span></h2>
-
-  <div class="faq-container">
- <!-- FAQ ITEM 1 -->
-    <div class="faq-item">
-      <div class="faq-question">
-        <p>Can I pay the fee in installments?</p>
-        <span class="faq-icon">⌄</span>
-      </div>
-      <div class="faq-answer">
-        Yes. The fee is divided into a Block Amount and two installments for convenience.​</div>
-    </div>
-
-    <!-- FAQ ITEM 2 -->
-    <div class="faq-item">
-      <div class="faq-question">
-        <p>What is the application process?</p>
-        <span class="faq-icon">⌄</span>
-      </div>
-      <div class="faq-answer">
-       Applicants must submit an online application along with their Statement of Purpose (SOP) and Curriculum Vitae (CV). Shortlisted candidates appear for an Aptitude Test.
-      </div>
-    </div>
-
-    <!-- FAQ ITEM 3 -->
-    <div class="faq-item">
-      <div class="faq-question">
-        <p>Do I need a background in public health?</p>
-        <span class="faq-icon">⌄</span>
-      </div>
-      <div class="faq-answer">
-        No. The programme welcomes applicants from diverse fields and provides a foundational grounding in global health and development.</strong>
-      </div>
-    </div>
-
-    <!-- FAQ ITEM 4 -->
-    <div class="faq-item">
-      <div class="faq-question">
-        <p> How will I be evaluated for admission?</p>
-        <span class="faq-icon">⌄</span>
-      </div>
-      <div class="faq-answer">
-        Admissions follow a holistic evaluation based on your SOP, CV, and Aptitude Test performance.
-      </div>
-      
-    </div>
-
-    <!-- FAQ ITEM 5 -->
-    <div class="faq-item">
-      <div class="faq-question">
-        <p> Who is eligible to apply?</p>
-        <span class="faq-icon">⌄</span>
-      </div>
-      <div class="faq-answer">
-        A bachelor’s degree in any discipline from a recognised institution. Candidates from health, social sciences, development, sciences, or humanities backgrounds are encouraged to apply.
-
-      </div>
-    </div>
-
-    <!-- FAQ ITEM 6 -->
-    <div class="faq-item">
-      <div class="faq-question">
-        <p>Is there an age limit for admission?</p>
-        <span class="faq-icon">⌄</span>
-      </div>
-      <div class="faq-answer">
-       No specific age limit is mentioned. The programme is open to eligible learners from diverse backgrounds.
-      </div>
-    </div>
-
-    
-  </div>
-</section>
- <h1 class="title-center">Enquire Now!</h1>
-<!-- Enquire Now Section -->
-<div class="enquiry-wrapper">
-    <div class="enquiry-card">
-      <!-- Left: Form -->
-      <div class="enquiry-form-panel">
-        
-   <div class="npf_wgts" data-height="400px" data-w="04891f022bbb3428ba0b07cb3d16d9fa"></div>
-      </div>
-
-      <!-- Right: Text -->
-      <div class="enquiry-text-panel">
-        <h2 class="enquiry-heading">
-          Let’s connect and shape your path at JGU!
-        </h2>
-        <p class="enquiry-subtext">
-          Reach out to know more about programmes, admissions, and opportunities
-        </p>
-      </div>
-    </div>
-  </div>
-
- <footer class="footer-center">
-  <p class="fw-bold">
+<footer class="site-footer">
+  <p class="text-center font-weight-bold">
     © 2026 O.P. Jindal Global University. All Rights Reserved
-    
   </p>
 </footer>
+
+<div class="npf_chatbots" data-w="a8b32b8ab432456a971900791d70c15b" style="display:none;"></div>
+<script type="text/javascript">
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  s.async = true;
+  s.src = "https://chatbot.in8.nopaperforms.com/en-gb/backend/bots/niaachtbtscpt.js/e815e394ee244cd1a8dc3bebaf8d81bf/a8b32b8ab432456a971900791d70c15b";
+  document.body.appendChild(s);
+</script>
 </body>
 </html>
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    breakpoints: {
-      640: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    }
-  });
-
-  // Why You Will Stand Out JS
-var whySwiper = new Swiper(".whySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-
-    breakpoints: {
-      1200: { slidesPerView: 3 },
-      900: { slidesPerView: 2 },
-      600: { slidesPerView: 1 },
-      0: { slidesPerView: 1 }
-    }
-  });
-
-  // What You Will Gain Slider
-  var swiper = new Swiper(".museoSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 25,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-      delay: 3000,
-    },
-    breakpoints: {
-      1200: { slidesPerView: 4 },
-      992: { slidesPerView: 3 },
-      768: { slidesPerView: 1 },
-      480: { slidesPerView: 1 },
-    }
-  });
-
-  // Fees Structure Table JS:
-const feeTabs = document.querySelectorAll(".fees-tab");
-const contentArea = document.getElementById("contentArea");
-
-feeTabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    // Remove active class from all tabs
-    feeTabs.forEach((t) => t.classList.remove("active"));
-    tab.classList.add("active");
-
-    const type = tab.getAttribute("data-tab");
-
-    if (type === "fees") {
-      contentArea.innerHTML = `
-        <table class="fees-table">
-           <thead>
-        <tr>
-          <th>Fee Category</th>
-          <th>Amount</th>
-          <th>Due Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Registration Amount</td>
-          <td>INR 25,000 </td>
-          <td>Upon acceptance of the offer letter</td>
-        </tr>
-        <tr>
-          <td>1st Installment</td>
-          <td>INR 1,25,000</td>
-          <td>Before Batch Commencement</td>
-        </tr>
-        <tr>
-          <td>2nd Installment</td>
-          <td>INR 1,25,000</td>
-          <td>By 15th Jul 2027</td>
-        </tr>
-        <tr class="total">
-          <td>Total Tuition Fee</td>
-          <td>INR 2,75,000</td>
-          <td></td>
-        </tr>
-      </tbody>
-        </table>
-      `;
-    }
-
-    
-    if (type === "eligibility") {
-      contentArea.innerHTML = `
-        <table class="fees-table">
-           <thead>
-            <tr>
-              <th>Category</th>
-              <th>Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Educational Qualification</td>
-              <td>Undergraduate degree in any discipline from a recognised university in India or abroad</td>
-            </tr>
-            <tr>
-              <td>ID Proof (Indian Applicants)</td>
-              <td>Aadhar Card / PAN Card / Voter ID</td>
-            </tr>
-            <tr>
-              <td>ID Proof (International Applicants)</td>
-              <td>Valid Passport</td>
-            </tr>
-            <tr>
-              <td>Selection Criteria – Short Essay</td>
-              <td>Candidates will be assessed holistically through their Statement of Purpose (SOP), Curriculum Vitae (CV), and performance in the Aptitude Test, ensuring a comprehensive evaluation of their academic readiness and professional aspirations.</td>
-            </tr>
-          </tbody>
-        </table>
-      `;
-    }
-  });
-});
-
-// Accordian Section JS
-const items = document.querySelectorAll('.accordion-item');
-
-  items.forEach(item => {
-    const header = item.querySelector('.accordion-header');
-    const icon = item.querySelector('.icon');
-
-    header.addEventListener('click', () => {
-      const isActive = item.classList.contains('active');
-
-      items.forEach(i => {
-        i.classList.remove('active');
-        i.querySelector('.icon').textContent = '▾';
-      });
-
-      if (!isActive) {
-        item.classList.add('active');
-        icon.textContent = '✕';
-      }
-    });
-  });
-  
-
-
-  
-// Trimester Tab JS
-const tabs = document.querySelectorAll(".tab");
-const title = document.querySelector(".trimester-title");
-const tableBody = document.querySelector(".course-table tbody");
-const totalCredits = document.querySelector(".course-table tfoot td:last-child strong");
-
-const courseData = {
-  1: {
-    title: "Trimester 1 | 2 Foundations + 2 Core (Total: 20 Credits)",
-    courses: [
-      ["Foundations in Global Health and Human Development", "Foundations", 5],
-      ["Basics of Epidemiology and Biostatics", "Foundations", 5],
-      ["Social Determinants of Health Equity", "Core", 5],
-      ["Global Health Governance", "Core", 5],
-    ]
-  },
-
-  2: {
-    title: "Trimester 2 | 2 Foundations + 2 Core (Total: 20 Credits)",
-    courses: [
-      ["Research Methods", "Foundations", 5],
-      ["Global Burden of Diseases", "Foundations", 5],
-      ["Program Management", "Core", 5],
-      ["Decolonizing Global Health and Global Health Ethics", "Core", 5],
-    ]
-  },
-
-  3: {
-    title: "Trimester 3 | 2 Core + 1 Dissertation/Capstone (Total: 20 Credits)",
-    courses: [
-      ["Planetary Health", "Core", 5],
-      ["Globalization of Health and Health Care", "Core", 5],
-      ["Dissertation/Capstone", "Core", 10], // updated to make total 20
-    ]
-  }
-};
-
-tabs.forEach((tab, index) => {
-  tab.addEventListener("click", () => {
-
-    document.querySelector(".tab.active").classList.remove("active");
-    tab.classList.add("active");
-
-    const trimester = index + 1;
-    const data = courseData[trimester];
-
-    title.textContent = data.title;
-    tableBody.innerHTML = "";
-
-    let total = 0;
-
-    data.courses.forEach(course => {
-      const tr = document.createElement("tr");
-      tr.innerHTML = `
-        <td style="color:black">${course[0]}</td>
-        <td style="color:black">${course[1]}</td>
-        <td style="color:black">${course[2]}</td>
-      `;
-      total += course[2];
-      tableBody.appendChild(tr);
-    });
-
-    // Show footer total for all trimesters
-    totalCredits.textContent = total;
-    document.querySelector(".course-table tfoot").style.display = "table-footer-group";
-
-  });
-});
-
-
-// Certification Table JS
-  const certTabs = document.querySelectorAll(".cert-tab");
-  const contentBox = document.getElementById("certificationContent");
-
-  const tabContent = {
-    industry: `
-      <table class="cert-table">
-        <thead>
-          <tr>
-            <th>Category</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Industry Certifications</td>
-            <td>
-              Recognised certifications from leading global institutions
-              aligned with industry requirements.
-            </td>
-          </tr>
-          <tr>
-            <td>Professional Skill Tracks</td>
-            <td>
-              Certifications focused on analytics, policy tools, governance
-              frameworks and applied learning.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    `,
-
-    credit: `
-      <table class="cert-table">
-        <thead>
-          <tr>
-            <th>Pathway</th>
-            <th>Recognised Certifications</th>
-            <th>Credit Waiver</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Data Analytics Pathway</td>
-            <td>Google Data Analytics Professional Certificate - IBM Data Analyst Professional Certificate - IBM Data Science Professional Certificate - Fractal Data Science Professional Certificate</td>
-            <td>
-              Waiver for Introduction to Data Science + 1 Elective Course
-            </td>
-          </tr>
-          <tr>
-            <td>Policy Design Pathway</td>
-            <td>Tableau Business Intelligence Analyst</td>
-            <td>
-              Waiver for 2 Elective Courses
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    `
-  };
-
-
-// Career Outcome JS
-document.addEventListener("DOMContentLoaded", function () {
-
-  let position = 0;
-
-  const cardWidth = 314;
-  const maxShift = 1;
-
-  const rows = [
-    document.getElementById("row1"),
-    document.getElementById("row2")
-  ];
-
-  const nextBtn = document.getElementById("nextBtn");
-  const prevBtn = document.getElementById("prevBtn");
-
-  // Disable desktop slider on mobile
-  if (window.innerWidth <= 768) return;
-
-  slide();
-
-//   nextBtn.addEventListener("click", () => {
-//     if (position < maxShift) {
-//       position++;
-//       slide();
-//     }
-//   });
-
-//   prevBtn.addEventListener("click", () => {
-//     if (position > 0) {
-//       position--;
-//       slide();
-//     }
-//   });
-
-//   function slide() {
-//   rows.forEach(row => {
-//     row.style.transform = `translateX(-${position * cardWidth}px)`;
-//   });
-
-//   document.getElementById("progressBar").style.height =
-//     ((position / maxShift) * 100) + "%";
-// }
-nextBtn.addEventListener("click", () => {
-    if (position < maxShift) {
-      position++;
-      slide();
-    }
-  });
-
-  prevBtn.addEventListener("click", () => {
-    if (position > 0) {
-      position--;
-      slide();
-    }
-  });
-
-  function slide() {
-    rows.forEach(row => {
-      row.style.transform = `translateX(-${position * cardWidth}px)`;
-    });
-
-    document.getElementById("progressBar").style.width =
-      ((position / maxShift) * 100) + "%";
-  }
-
-});
-
-// Faculty Slider JS
-new Swiper(".faculty-slider-wrapper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".faculty-slider-right",
-      prevEl: ".faculty-slider-left",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      1024: {
-        slidesPerView: 5,
-      },
-    },
-  });
-
-
-// Recognition Slider JS
-var swiper = new Swiper(".recSwiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  centeredSlides: true,
-  loop: true,
-
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-
-  speed: 800,
-
-  breakpoints: {
-    1200: { slidesPerView: 5 },
-    992: { slidesPerView: 3 },
-    768: { slidesPerView: 2 },
-    480: { slidesPerView: 1 }
-  },
-
-  on: {
-    slideChangeTransitionEnd: function () {
-      document.querySelectorAll(".rec-card").forEach(e => e.classList.remove("big"));
-
-      let activeSlides = document.querySelectorAll(".swiper-slide-active, .swiper-slide-next, .swiper-slide-prev");
-      if (activeSlides[1]) activeSlides[1].classList.add("big");
-    }
-  }
-});
-
-// FAQ Section JS
-document.querySelectorAll(".faq-item").forEach(item => {
-  item.addEventListener("click", () => {
-    // Close all except clicked
-    document.querySelectorAll(".faq-item").forEach(i => {
-      if (i !== item) i.classList.remove("active");
-    });
-
-    // Toggle current item
-    item.classList.toggle("active");
-  });
-});
-
-</script>
-
-<script type="text/javascript">var s=document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.in8.nopaperforms.com/emwgts.js"; document.body.appendChild(s);</script>
-
-<script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script><script>let npfW04891f022bbb3428ba0b07cb3d16d9fa = new NpfWidgetsInit(        {'widgetId':'04891f022bbb3428ba0b07cb3d16d9fa',    'baseurl':'widgets.in8.nopaperforms.com',    'formTitle':'Enquiry Form',    'titleColor':'#FF0033',    'backgroundColor':'#ddd',    'iframeHeight':'500px',     'buttonbgColor':'#22E6EE',     'buttonTextColor':'#0D1B73',    });</script>
-
-<!-- Facebook Pixel Code -->
-<script>
-!(function (f, b, e, v, n, t, s) {
-if (f.fbq) return;
-n = f.fbq = function () {
-n.callMethod
-? n.callMethod.apply(n, arguments)
-: n.queue.push(arguments);
-};
-if (!f._fbq) f._fbq = n;
-n.push = n;
-n.loaded = !0;
-n.version = "2.0";
-n.queue = [];
-t = b.createElement(e);
-t.async = !0;
-t.src = v;
-s = b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t, s);
-})(
-window,
-document,
-"script",
-"https://connect.facebook.net/en_US/fbevents.js"
-);
-fbq("init", "1243343920376799");
-fbq("track", "PageView");
-</script>
-<noscript>
-<img
-height="1"
-width="1"
-src="https://www.facebook.com/tr?id=1243343920376799&ev=PageView
-&noscript=1"
-/>
-</noscript>
-<!-- End Facebook Pixel Code -->
- 
